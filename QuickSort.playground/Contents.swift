@@ -1,10 +1,10 @@
-func quicksort(_ array: Array<Int>) -> Array<Int> {
+func quicksort(_ array: [Int]) -> [Int] {
     if array.count < 2 {
         return array
     } else {
         let first = array[0]
-        var less = Array<Int>()
-        var greater = Array<Int>()
+        var less = [Int]()
+        var greater = [Int]()
         for item in array.suffix(from: 1) {
             item <= first ? less.append(item) : greater.append(item)
         }
