@@ -5,6 +5,8 @@
 //  Created by Gu Jun on 2019/9/11.
 //  Copyright © 2019 Gu Jun. All rights reserved.
 //
+//  reference: 趣学算法 3.4.6 P121
+//
 
 import Foundation
 
@@ -47,7 +49,7 @@ func quicksort(_ r: inout [Int], _ low: Int, _ high: Int) {
     }
 }
 
-var nums = [5, 1, 4, 9, 0, 2, 3, 8, 7, 6]
+var nums = [30, 24, 5, 58, 18, 36, 12, 42, 39]
 quicksort(&nums, 0, nums.count - 1)
 
 print(nums)
